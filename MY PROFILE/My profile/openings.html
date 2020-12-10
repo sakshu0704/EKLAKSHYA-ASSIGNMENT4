@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: yellow;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height:200px;
+  width:30;
+  padding-top:50px;
+}
+.spam{
+    padding-top:50px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Job Openings for different position</h2>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Software Engineer</h3>
+      <p> MIND TREE</p>
+      
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Software Trainee Analyst</h3>
+      <p> COGNIZANT</p>
+      
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Programmer</h3>
+      <p>TCS</p>
+          </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Web Developer</h3>
+      <p>WIPRO</p>
+      
+    </div>
+  </div>
+
+  
+</div>
+<div class="spam">
+<div class="row">
+  <div class="column">
+    <div class="card" >
+      <h3>Software Trainee</h3>
+      <p> IBM</p>
+      
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>AWS Developer</h3>
+      <p> Google</p>
+      
+    </div>
+  </div>
+
+   <div class="column">
+    <div class="card">
+      <h3>Python Developer</h3>
+      <p> Syntel</p>
+      
+    </div>
+  </div>
+
+   <div class="column">
+    <div class="card">
+      <h3>Cloud Engineer</h3>
+      <p>Siemens</p>
+      
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

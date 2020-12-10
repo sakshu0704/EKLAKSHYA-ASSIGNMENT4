@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 1px solid black;
+        }
+        body{
+            background-color:#B6CEC7;
+        }
+    </style>
+   </head>
+     <body>
+   <marquee><h1>CONTACT FORM</h1></marquee>
+    <form action="About.html">
+        username<input type="text" name="fname" value="Ram" readonly/><br/>
+        Name:<input type="text" name="name" required><br/>
+        Company:<input type="text" name="Company"value="Shrishti"disabled/><br/>
+        Age:<input type="number" name="age" required min="18" max="80"step="2"/><br/>
+        Phone:<input type="tel" pattern="[0-9]{10}" name="phone" required><br>
+        Date:<input type="date" name="date" min="2016-12-31" max="2017-06-30"/><br/>
+        Month:<input type="month" placeholder="032001"name="month"min="2017-01" max="2017-06"/><br/>
+        Min-Range:<input type="range" name="num1" onchange="n2.value=parseInt(num1.value)"/><br/>
+         <output name="n2"></output><br>
+          Max-Range:<input type="range" name="num2" onchange="n1.value=parseInt(num2.value)"/><br/>
+         <output name="n1"></output><br>
+         AdhaarNumber:<input type="number"name="AdhaarNumber"required><br/>
+         PanCard:<input type="text" name="PanCard" required><br/>
+        Date-Time:<input type="datetime-local" name="datetime"/><br/>
+        Email:<input type="email" name="email"/><br/>
+        Color:<input type="color" name="Color"/><br/>
+        <input type="submit"value="Submit">
+        Gender<input type="radio" name="gen1" checked value="male">Male
+        <input type="radio" name="gen1"  value="female">Female</br>
+    </select>
+</br>
+Other details<textarea rows="10" cols="10"></textarea></br>
+<button-type="submit" value="Submit" align="right"> </br>   
+             <input type="button" value="Reset"> </br>
+             <input type="button" value="show Range"
+             onclick="result.value=parseInt(num1.value)+parseInt(num2.value)">
+             <output name="result"></output>
+             <h4>Contact at www.abcacademy.com<h4>
+             
+        
+</form>
+    
+    
+</body>
+</html>
